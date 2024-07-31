@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+}
+
+#content{
+    height: 100vh;
+}
+
+#left{
+    width: 25%;
+    height: 100%;
+    background-color: rgb(219, 214, 214);
+}
+
+#right{
+    width: 75%;
+}
