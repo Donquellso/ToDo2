@@ -18,9 +18,11 @@ class ProjectElement {
 }
 
 const getAllProjectsNames = () => {
+    let names=[];
     tab.forEach(element => {
-        console.log(element.name);
+       names.push(element.name);
     });
+    return names;
 }
 
 const addNewProject = (name) => {
@@ -34,10 +36,15 @@ const addNewProjectElement = (title, description, dueDate, index) =>{
 }
 
 const getAllProjectElements = (index) => {
+    let elements = [];
     tab[index].details.forEach(element =>{
-        console.log(element.title);
-        console.log(element.dueDate);
+        let project = {
+        title: element.title,
+        dueDate: element.dueDate,
+        }
+        elements.push(project);
     })
+    return elements;
 }
 
 const expandProjectElement = (index, num) => {
